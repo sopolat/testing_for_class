@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-int mem[201][201];
+int mem[301][301];
 int helper(int maxH,int bricks)
 {
 	if(mem[maxH][bricks]!=0)
@@ -31,10 +31,10 @@ int ans(int n)
 
 int main()
 {
-	for(int i=0;i<201;i++)
-		for(int j=0;j<201;j++)
+	for(int i=0;i<301;i++)
+		for(int j=0;j<301;j++)
 			mem[i][j]=0;
-    cout<<ans(200);
+    cout<<ans(300);
 
     return 0;
 }
